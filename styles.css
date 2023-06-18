@@ -1,0 +1,158 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+  font-family: var(--ff-primary);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+
+
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+nav {
+  background: rgb(218, 213, 213);
+  height: 3rem;
+  display: grid;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(95, 93, 95, 0.8)
+}
+.nav-center {
+  width: 90vw;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-center h4 {
+  margin-bottom: 0;
+  color: indigo;
+}
+.nav-links {
+  display: flex;
+}
+nav a {
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 100%;
+  color: whitesmoke;
+  letter-spacing: var(--spacing);
+  margin-right: 10rem;
+  background: indigo;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+}
+nav a:hover {
+  color: black;
+  background-color: blueviolet;
+}
+
+main {
+  min-height: calc(100vh - 3rem);
+  display: grid;
+  place-items: center;
+}
+.container {
+  text-align: center;
+}
+.container h2 {
+  background: black;
+  color: whitesmoke;
+  padding: 1rem;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 2.5rem;
+}
+.color {
+  color:whitesmoke;
+
+}
+.btn-hero {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  color: var(--clr-black);
+  letter-spacing: var(--spacing);
+  display: inline-block;
+  font-weight: 700;
+  transition: smooth;
+  border: 2px solid var(--clr-black);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(46, 9, 61, 0.8);
+  background: indigo;
+  border-radius: 5px 10px 5px 10px;
+  margin-bottom: 2.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+
+}
+.btn-hero:hover {
+  color:white;
+  background: rgb(141, 69, 141);
+}
