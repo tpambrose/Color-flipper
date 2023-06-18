@@ -1,14 +1,18 @@
-const colors =["blue","brown","black","pink","green","yellow","Lime", "LimeGreen", "Linen", "Magenta", "Maroon"];
-const button = document.getElementById('btn');
-const color = document.querySelector('.color');
+const colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const button = document.getElementById("btn");
+const color = document.querySelector(".color");
 
-button.addEventListener("click", function() {
-    // Code to be executed when the button is clicked
-    const randomColor = getRandomColor();
+button.addEventListener("click", function () {
+  let randomColor = "#";
+  for (let i = 0; i < 6; i++) {
+    randomColor+= colors[getRandomNumber()];
+  }
+  // console.log(hexColor);
 
-    document.body.style.backgroundColor= colors[randomColor];
-  color.textContent=colors[randomColor];
-  });
- function getRandomColor(){
-    return Math.floor(Math.random()*colors.length);
+  color.textContent = randomColor;
+  document.body.style.backgroundColor = randomColor;
+});
+
+function getRandomNumber() {
+  return Math.floor(Math.random() * colors.length);
 }
